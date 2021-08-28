@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+ 
   MDBContainer,
   MDBRow,
   MDBCol,
@@ -16,26 +17,23 @@ import github from "../images/github.svg";
 import linkedin from "../images/linkedin.svg";
 import insta from "../images/instagram.svg";
 import gmail from "../images/gmail.svg";
-
+import { faAddressCard} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export class About extends Component {
   render() {
     return (
-      <div>
+      <div id="about">
         <MDBContainer
           id="about"
           fluid
           style={{
-            marginTop: "4%",
             padding: "2%",
             fontFamily: "Red Rose",
-            border: "1px solid white",
+           
           }}
           className="color"
         >
-          <br />
-          <br />
-          <br />
-          <h1 className="white-text">ABOUT ME</h1>
+          <h1 className="white-text"> <FontAwesomeIcon icon={faAddressCard}  /> ABOUT ME</h1>
           <br />
           <br />
           <br />
@@ -90,17 +88,16 @@ export class About extends Component {
                   >
                     <br />
                     <MDBBadge color="default" style={{ margin: "1%" }}>
-                      C/C++
+                      English
                     </MDBBadge>
                     <MDBBadge color="default" style={{ margin: "1%" }}>
-                      Java
+                      Hindi
                     </MDBBadge>
                     <MDBBadge color="default" style={{ margin: "1%" }}>
-                      Javascript
+                    Gujarati
                     </MDBBadge>
-                    <MDBBadge color="default" style={{ margin: "1%" }}>
-                      Python
-                    </MDBBadge>
+                   
+                    
                   </MDBContainer>
                 </h2>
                 <br />
@@ -112,7 +109,7 @@ export class About extends Component {
                     <MDBRow>
                       <MDBCol size="12">
                         <MDBRow>
-                          <MDBCol>
+                          <MDBCol size="6">
                             <a
                               href="https://github.com/himanshu72"
                               target="blank"
@@ -127,7 +124,7 @@ export class About extends Component {
                             </a>
                           </MDBCol>
 
-                          <MDBCol>
+                          <MDBCol size="6">
                             <a
                               href="https://www.linkedin.com/in/himanshu-joshi-81a586178/"
                               className="color btn"
@@ -145,7 +142,7 @@ export class About extends Component {
                       </MDBCol>
                       <MDBCol size="12">
                         <MDBRow>
-                          <MDBCol>
+                          <MDBCol size="6" >
                             <a
                               href="https://www.instagram.com/himanshu_j_o_s_h_i/"
                               className="color btn"
@@ -159,7 +156,7 @@ export class About extends Component {
                               />
                             </a>
                           </MDBCol>
-                          <MDBCol>
+                          <MDBCol size="6">
                             <a
                               href="mailto:hjoshi115@gmail.com"
                               className="color btn"
@@ -184,8 +181,11 @@ export class About extends Component {
               <img src={js} style={{ width: "100%" }} alt="img" />
             </MDBCol>
           </MDBRow>
+      
         </MDBContainer>
-      </div>
+        
+     
+       </div>
     );
   }
 }

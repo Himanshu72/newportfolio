@@ -33,5 +33,24 @@ h1::after {
   height: 3px;
   margin: auto;
   margin-top: 4px;
-  background: white;
+}
+
+.langsbtn {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #141e30,
+    #243b55
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 6%;
+  transition: all 1s ease;
+  border-radius: 40px;
+}
+.langsbtn:hover {
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+.langs {
+  color: white;
 }

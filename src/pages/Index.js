@@ -5,50 +5,93 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
 import Typist from "react-typist";
 import cv from "../cv.pdf";
 import { Tween } from "react-gsap";
+import anime from "../images/coder.json"
+import Lottie from "lottie-react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode,} from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import Buttons from "../componets/Buttons"
+library.add(fab); 
 function index() {
-  return (
-    <div>
-      <Nav />
+  let names=["Nodejs","ExpressJS","React","Angular","Graphql","MongoDB","Postgresql","android"];
+  let links=["https://nodejs.org/en/about/",
+   "https://expressjs.com/",
+    "https://reactjs.org/",
+    "https://angular.io/",
+    "https://graphql.org/",
+    "https://www.mongodb.com/",
+    "https://www.postgresql.org/",
+    "https://www.android.com/"
+  ];           
+  let btns=[];
+  let names2=["Django","Spring","Xamarin","Automation"]
+  let links2=["https://www.djangoproject.com/","https://spring.io/","https://dotnet.microsoft.com/apps/xamarin","https://www.browserstack.com/guide/selenium-webdriver-tutorial"];
+  let btns2=[];  
+  for(let x=0;x<names2.length;x++){
+      btns2.push(  <MDBCol size="3">        
+       <Buttons name={names2[x]}link={links2[x]} />
+      </MDBCol>
+    );
+  }
+  
+  for(let x=0;x<names.length;x++){
+     
+    btns.push(
+        <MDBCol size="3">        
+          <Buttons name={names[x]}link={links[x]} />
+        </MDBCol>
 
-      <MDBContainer style={{ marginTop: "4%" }}>
-        <MDBRow>
-          <MDBCol md="5 ">
-            <Tween from={{ x: "-1000px" }} duration="1.5">
-              <img alt="img" src={hello} style={{ width: "100%" }} />
-            </Tween>
+      )
+  }
+  
+  return (
+    
+    <div>
+   
+
+      <MDBContainer  style={{
+            padding: "2%",
+            fontFamily: "Red Rose",
+            border: "1px solid white",
+            marginTop:"-12%"
+          }}
+          >
+      <h1 className="h1-responsive font-weight-bold my-5" className="black-text">
+      <FontAwesomeIcon icon={faCode} className="bd"  /> My Skills
+        </h1> 
+         
+        < MDBRow>
+       
+         
+          <MDBCol md="5" style={{textAlign:"center"}}  >
+            <Lottie animationData={anime} style={{margin:"auto"}}  />
+      
           </MDBCol>
           <MDBCol
             md="7"
             style={{
-              textAlign: "justify",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
+              padding:"5%"
             }}
           >
+             <h4 className="my-3"> I Usually Woke With  </h4>
             <div style={{ textAlign: "center" }}>
-              <Typist>
-                <h4
-                  style={{
-                    fontFamily: "Red Rose",
-                    fontSize: "3.5em",
-                    textShadow: "1px 1px 1  px #141e30",
-                  }}
-                >
-                  Hello,I am Himanshu Joshi
-                </h4>
-              </Typist>
+              <MDBRow>
+                {btns}
+             </MDBRow>
             </div>
 
             <div style={{ textAlign: "center" }}>
-              <a href={cv} target="_new">
-                <MDBBtn outline color="black">
-                  CV
-                </MDBBtn>
-              </a>
+            <h4 className="my-3"> I Am Familiar With </h4>
+              <MDBRow>
+              {btns2}
+              </MDBRow>
             </div>
+         
           </MDBCol>
-        </MDBRow>
+            </MDBRow>
+                <a href="https://docs.google.com/document/d/1ifHlFsvcA7aS64ghvUdaZuPtgdEd044uMnBfgO2_snE/edit?usp=sharing" target="_blank" > <MDBBtn color="dark" outline >  View Resume</MDBBtn></a>
+
       </MDBContainer>
     </div>
   );
