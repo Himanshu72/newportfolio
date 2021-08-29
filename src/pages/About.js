@@ -22,7 +22,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export class About extends Component {
   render() {
     return (
-      <div id="about">
+      <div id="about" style={{width:"100%"}} >
         <MDBContainer
           id="about"
           fluid

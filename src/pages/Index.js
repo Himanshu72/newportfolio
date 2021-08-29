@@ -47,7 +47,7 @@ function index() {
   
   return (
     
-    <div>
+    <div  style={{width:"100%"}}>
    
 
       <MDBContainer  style={{

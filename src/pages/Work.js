@@ -7,7 +7,8 @@ function Work() {
   return (
     <div
     style={{
-      fontFamily: "Red Rose"
+      fontFamily: "Red Rose",
+      width:"100%"
     }}
     className="my-5 color" >
       <h1 className="white-text"   >Some Of My Work </h1>
