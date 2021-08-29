@@ -102,7 +102,7 @@ export class About extends Component {
                 </h2>
                 <br />
                 <MDBCard
-                  style={{ width: "60%", textAlign: "center", margin: "auto" }}
+                  style={{  textAlign: "center", margin: "auto" }}
                 >
                   <MDBCardBody>
                     <MDBCardTitle>Social Media</MDBCardTitle>
@@ -119,7 +119,7 @@ export class About extends Component {
                               <img
                                 src={github}
                                 alt="github"
-                                style={{ width: "100%" }}
+                               className="grow"
                               />
                             </a>
                           </MDBCol>
@@ -134,7 +134,7 @@ export class About extends Component {
                               <img
                                 src={linkedin}
                                 alt="linkedin"
-                                style={{ width: "100%" }}
+                                className="grow"
                               />
                             </a>
                           </MDBCol>
@@ -152,7 +152,7 @@ export class About extends Component {
                               <img
                                 src={insta}
                                 alt="instagram"
-                                style={{ width: "100%" }}
+                                className="grow"
                               />
                             </a>
                           </MDBCol>
@@ -166,7 +166,7 @@ export class About extends Component {
                               <img
                                 src={gmail}
                                 alt="gmail"
-                                style={{ width: "100%" }}
+                                className="grow"
                               />
                             </a>
                           </MDBCol>

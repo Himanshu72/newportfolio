@@ -12,10 +12,10 @@ function Work() {
     className="my-5 color" >
       <h1 className="white-text"   >Some Of My Work </h1>
       <br /><br /><br />
-        <MDBContainer fluid>
+      <MDBContainer fluid className="center" >
         <MDBRow>
-          <MDBCol md="4">
-          <MDBCol style={{ maxWidth: "22rem" }}>
+          <MDBCol md="4" style={{padding:"2%"}} >
+          
       <MDBCard>
         <MDBCardImage className="img-fluid" src={proj1}
           waves />
@@ -32,12 +32,13 @@ function Work() {
           <MDBBtn href="http://teamiify.herokuapp.com/" target="_blank" className="color" >View</MDBBtn>
         </MDBCardBody>
       </MDBCard>
-    </MDBCol>
+   
     
             
            </MDBCol> 
-           <MDBCol md="4">
-          <MDBCol style={{ maxWidth: "22rem" }}>
+          
+           <MDBCol md="4" style={{padding:"2%"}} >
+         
       <MDBCard>
         <MDBCardImage className="img-fluid" src={proj2}
           waves />
@@ -45,7 +46,7 @@ function Work() {
           <MDBCardTitle>AU_CMS</MDBCardTitle>
           <MDBCardText >
             AU-CMS is an event management system for Ahmedabad University.
-            <MDBBadge className="color " >Nodejs</MDBBadge>&nbsp;&nbsp;
+            <br /><MDBBadge className="color " >Nodejs</MDBBadge>&nbsp;&nbsp;
             <MDBBadge className="color" >EJS</MDBBadge>&nbsp;&nbsp;
             <MDBBadge className="color" >MDBootstrap</MDBBadge>&nbsp;&nbsp;
             <MDBBadge className="color" >Express</MDBBadge>&nbsp;&nbsp;
@@ -55,13 +56,13 @@ function Work() {
           <MDBBtn href="http://aucms.herokuapp.com/ " target="_blank" className="color" >View</MDBBtn>
         </MDBCardBody>
       </MDBCard>
-    </MDBCol>
+    
     
             
            </MDBCol> 
 
-           <MDBCol md="4">
-          <MDBCol style={{ maxWidth: "22rem" }}>
+           <MDBCol md="4" style={{padding:"2%"}} >
+         
       <MDBCard>
         <MDBCardImage className="img-fluid" src={proj3}
           waves />
@@ -81,8 +82,7 @@ function Work() {
       </MDBCard>
     </MDBCol>
     
-            
-           </MDBCol>   
+             
            
     
             
@@ -91,7 +91,7 @@ function Work() {
         <br />
         <a href="https://github.com/himanshu72" target="_blank" > <MDBBtn color="light" >  View More</MDBBtn>  </a>
         </MDBContainer>
-        <br />
+      <br />
     </div>
   );
 }

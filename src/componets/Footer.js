@@ -16,14 +16,14 @@ export default class Footer extends Component {
           <MDBCol size="3">
           <a href="https://www.instagram.com/himanshu_j_o_s_h_i/"
                               className="btn"
-                              style={{ width:"50%",borderRadius:"25px" ,background:"white" }}
+                              style={{ borderRadius:"25px" ,background:"white" }}
 
                               target="blank"
                             >
                               <img
                                 src={insta}
                                 alt="instagram"
-                                style={{ width: "100%" }}
+                                className="grow"
                               />
                             </a>
           </MDBCol>
@@ -31,28 +31,28 @@ export default class Footer extends Component {
               
           <a href="https://github.com/himanshu72"
                               className="btn"
-                              style={{ width:"50%",borderRadius:"25px" ,background:"white" }}
+                              style={{ borderRadius:"25px" ,background:"white" }}
 
                               target="blank"
                             >
                               <img
                                 src={github}
                                 alt="github"
-                                style={{ width: "100%" }}
+                                className="grow"
                               />
                             </a>
           </MDBCol>
           <MDBCol size="3">
           <a href="https://www.linkedin.com/in/himanshu-joshi-81a586178/"
                               className="btn"
-                              style={{ width:"50%",borderRadius:"25px" ,background:"white" }}
+                              style={{ borderRadius:"25px" ,background:"white" }}
 
                               target="blank"
                             >
                               <img
                                 src={linkedin}
                                 alt="linkedin"
-                                style={{ width: "100%" }}
+                                className="grow"
                               />
                             </a>
 
@@ -61,14 +61,15 @@ export default class Footer extends Component {
               
           <a href="mailto:hjoshi115@gmail.com"
                               className="btn"
-                              style={{ width:"50%",borderRadius:"25px" ,background:"white" }}
+                              style={{ borderRadius:"25px" ,background:"white" }}
 
                               target="blank"
                             >
                               <img
                                 src={gmail}
                                 alt="gmail"
-                                style={{ width: "100%" }}
+                                className="grow"
+
                               />
                             </a>
               

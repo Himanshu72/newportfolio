@@ -37,3 +37,21 @@
     transform: rotate(360deg);
   }
 }
+
+.bm {
+  margin-bottom: 5%;
+}
+
+.grow {
+  width: 80px;
+}
+@media only screen and (max-width: 858px) {
+  .grow {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 564px) {
+  .grow {
+    width: 30px;
+  }
+}
