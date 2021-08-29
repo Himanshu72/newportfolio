@@ -29,7 +29,7 @@ function index() {
   let links2=["https://www.djangoproject.com/","https://spring.io/","https://dotnet.microsoft.com/apps/xamarin","https://www.browserstack.com/guide/selenium-webdriver-tutorial"];
   let btns2=[];  
   for(let x=0;x<names2.length;x++){
-      btns2.push(  <MDBCol size="3">        
+      btns2.push(  <MDBCol size="3" className="fnt" >        
        <Buttons name={names2[x]}link={links2[x]} />
       </MDBCol>
     );
@@ -39,7 +39,7 @@ function index() {
      
     btns.push(
         <MDBCol size="3">        
-          <Buttons name={names[x]}link={links[x]} />
+          <Buttons name={names[x]}link={links[x]} className="fnt"  />
         </MDBCol>
 
       )

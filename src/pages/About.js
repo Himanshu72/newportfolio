@@ -22,16 +22,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export class About extends Component {
   render() {
     return (
-      <div id="about" style={{width:"100%"}} >
+      <div id="about"  >
         <MDBContainer
           id="about"
           fluid
           style={{
             padding: "2%",
             fontFamily: "Red Rose",
-           
+            
           }}
-          className="color"
+          className="color con"
         >
           <h1 className="white-text"> <FontAwesomeIcon icon={faAddressCard}  /> ABOUT ME</h1>
           <br />
