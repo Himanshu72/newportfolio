@@ -74,7 +74,7 @@ function index() {
               padding:"5%"
             }}
           >
-             <h4 className="my-3"> I Usually Woke With  </h4>
+             <h4 className="my-3"> I Usually Work With  </h4>
             <div style={{ textAlign: "center" }}>
               <MDBRow>
                 {btns}
